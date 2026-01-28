@@ -1,5 +1,7 @@
 # MySQL MCP 服务器
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 一个用于 MySQL 数据库的模型上下文协议（MCP）服务器实现，使 Claude 等 AI 助手能够以安全、标准化和可控的方式与 MySQL 数据库交互。
 
 ## 特性

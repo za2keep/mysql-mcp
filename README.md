@@ -1,5 +1,7 @@
 # MySQL MCP Server
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 A Model Context Protocol (MCP) server implementation for MySQL databases, enabling AI assistants like Claude to interact with MySQL databases in a safe, standardized, and controlled way.
 
 ## Features
