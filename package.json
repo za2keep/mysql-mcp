@@ -1,0 +1,53 @@
+{
+  "name": "mysql-mcp-server",
+  "version": "1.0.0",
+  "description": "MySQL MCP Server - Model Context Protocol server for MySQL databases",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mysql-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --run --coverage",
+    "test:unit": "vitest --run tests/unit",
+    "test:property": "vitest --run tests/property",
+    "test:integration": "vitest --run tests/integration",
+    "db:start": "./tests/integration/db-setup.sh start",
+    "db:stop": "./tests/integration/db-setup.sh stop",
+    "db:reset": "./tests/integration/db-setup.sh reset",
+    "db:logs": "./tests/integration/db-setup.sh logs",
+    "db:connect": "./tests/integration/db-setup.sh connect",
+    "db:status": "./tests/integration/db-setup.sh status",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mysql",
+    "model-context-protocol",
+    "ai",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mysql2": "^3.3.3",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "fast-check": "^3.15.0",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

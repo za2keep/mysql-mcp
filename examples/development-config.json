@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "mysql-dev": {
+      "command": "mysql-mcp-server",
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "dev_user",
+        "MYSQL_PASSWORD": "dev_password",
+        "MYSQL_DATABASE": "dev_database",
+        "MAX_SELECT_ROWS": "100",
+        "ALLOW_DDL": "true",
+        "ALLOW_MULTIPLE_STATEMENTS": "false",
+        "REQUIRE_WHERE_CLAUSE": "false",
+        "MCP_LOG_LEVEL": "debug"
+      }
+    }
+  }
+}

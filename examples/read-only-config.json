@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "mysql-readonly": {
+      "command": "mysql-mcp-server",
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "mcp_readonly",
+        "MYSQL_PASSWORD": "readonly_password",
+        "MYSQL_DATABASE": "your_database",
+        "MAX_SELECT_ROWS": "5000",
+        "ALLOW_DDL": "false",
+        "ALLOW_MULTIPLE_STATEMENTS": "false",
+        "REQUIRE_WHERE_CLAUSE": "true",
+        "MCP_LOG_LEVEL": "warn"
+      }
+    }
+  }
+}

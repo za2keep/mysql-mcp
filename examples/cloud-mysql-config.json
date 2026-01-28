@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "mysql-cloud": {
+      "command": "mysql-mcp-server",
+      "env": {
+        "MYSQL_HOST": "your-instance.rds.amazonaws.com",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "admin",
+        "MYSQL_PASSWORD": "your_secure_password",
+        "MYSQL_DATABASE": "production_db",
+        "MAX_SELECT_ROWS": "1000",
+        "ALLOW_DDL": "false",
+        "REQUIRE_WHERE_CLAUSE": "true",
+        "MCP_LOG_LEVEL": "info"
+      }
+    }
+  }
+}
